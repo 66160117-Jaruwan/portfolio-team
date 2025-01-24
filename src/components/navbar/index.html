@@ -6,33 +6,43 @@
   <title>Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<header class="bg-gray-800 text-white">
-    <div class="container mx-auto flex justify-between items-center p-4">
+<body>
+  <!-- Navbar -->
+  <header class="bg-gray-800 text-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <!-- Logo -->
-      <h1 class="text-xl font-bold "> Portfolio </h1>
-      
-      <!-- Navigation Menu -->
-      <nav class="hidden md:flex space-x-6">
-        <a href="index.html" class="hover:text-teal-400">Home</a>
-        <a href="about.html" class="hover:text-teal-400">About</a>
-        <a href="projects.html" class="hover:text-teal-400">Projects</a>
-        <a href="contact.html" class="hover:text-teal-400">Contact</a>
+      <img src="Logo.png" width="90" height="70" alt="Logo" class="img-fluid">
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-gray-300 hover:text-teal-400 transition">Home</a>
+        <a href="about.html" class="text-gray-300 hover:text-teal-400 transition">About</a>
+        <a href="projects.html" class="text-gray-300 hover:text-teal-400 transition">Projects</a>
+        <a href="contact.html" class="text-gray-300 hover:text-teal-400 transition">Contact</a>
       </nav>
-      
-      <!-- Hamburger Menu -->
-      <button id="menu-btn" class="md:hidden flex flex-col space-y-2">
-        <span class="w-6 h-1 bg-white"></span>
-        <span class="w-6 h-1 bg-white"></span>
-        <span class="w-6 h-1 bg-white"></span>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="block md:hidden focus:outline-none">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
       </button>
     </div>
-  
+
     <!-- Mobile Menu -->
-    <nav id="mobile-menu" class="hidden flex-col space-y-4 p-4 bg-gray-700 md:hidden">
-      <a href="#home" class="hover:text-teal-400">Home</a>
-      <a href="#about" class="hover:text-teal-400">About</a>
-      <a href="#projects" class="hover:text-teal-400">Projects</a>
-      <a href="#contact" class="hover:text-teal-400">Contact</a>
-    </nav>
+    <div id="mobile-menu" class="hidden bg-gray-700 md:hidden">
+      <a href="index.html" class="block px-4 py-2 text-gray-300 hover:bg-teal-500">Home</a>
+      <a href="about.html" class="block px-4 py-2 text-gray-300 hover:bg-teal-500">About</a>
+      <a href="projects.html" class="block px-4 py-2 text-gray-300 hover:bg-teal-500">Projects</a>
+      <a href="contact.html" class="block px-4 py-2 text-gray-300 hover:bg-teal-500">Contact</a>
+    </div>
   </header>
-  
+  <script>
+    // Toggle mobile menu
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
