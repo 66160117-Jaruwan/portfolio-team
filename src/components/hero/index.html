@@ -6,26 +6,53 @@
   <title>Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<section id="hero" class="bg-gray-900 text-white py-20">
-    <h1 class="text-4xl font-bold mt-4">Portfolio</h1>
-    <div class="container mx-auto text-center">
-      <!-- Profile Image -->
-      <img src="https://i2.wp.com/unefilleauvolant.com/wp-content/uploads/2024/05/photo-taylor-swit-the-eras-tour-2024-001.jpg?quality=100&ssl=1" 
-      alt="Profile" class="w-full max-w-2xl object-cover rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-      
-      <!-- Name and Title -->
-      <h2 class="text-4xl font-bold mt-4">Jaruwan</h2>
-      <p class="text-lg mt-2">Front-end Developer</p>
-      
-      <!-- Short Description -->
-      <p class="mt-4 text-gray-400">I create beautiful and responsive websites to enhance user experience.</p>
-      
-      <!-- Social Media Links -->
-      <div class="mt-6 flex justify-center space-x-4">
-        <a href="#" class="text-teal-400 hover:text-teal-600">LinkedIn</a>
-        <a href="#" class="text-teal-400 hover:text-teal-600">GitHub</a>
-        <a href="#" class="text-teal-400 hover:text-teal-600">Twitter</a>
+<body>
+  <section id="hero" class="bg-gray-900 text-white py-10 sm:py-20 min-h-screen">
+    <!-- Title -->
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl sm:text-6xl font-bold mb-8 text-center">Portfolio</h1>
+
+      <!-- Content -->
+      <div class="flex flex-col md:flex-row items-center md:items-start md:space-x-8 space-y-10 md:space-y-0">
+        <!-- Profile Image -->
+        <div class="flex-shrink-0 w-full md:w-1/2 max-w-full">
+          <img 
+            src="https://i2.wp.com/unefilleauvolant.com/wp-content/uploads/2024/05/photo-taylor-swit-the-eras-tour-2024-001.jpg?quality=100&ssl=1" 
+            alt="Profile" 
+            class="w-full object-cover rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
+        </div>
+
+        <!-- Information -->
+        <div class="text-left md:w-1/2 space-y-6">
+          <!-- Name and Title -->
+          <h2 class="text-3xl sm:text-4xl font-bold">Taylor Swift</h2>
+          <p class="text-lg sm:text-xl mt-2">นักร้องและนักแต่งเพลงชาวอเมริกันชื่อดัง</p>
+
+          <!-- Short Description -->
+          <p class="mt-2 text-gray-400 text-base sm:text-lg">
+            เธอมีผู้ติดตามใน Instagram 282 ล้านคน และ Facebook มากกว่า 80 ล้านคน
+            <br>เธอได้อยู่ในรายชื่อ “100 บุคคลผู้ทรงอิทธิพลทั่วโลก”
+          </p>
+          <p class="text-lg font-bold">ความปังของเธอในปี 2023</p>
+          <p class="text-gray-400 text-base sm:text-lg">
+            THE ERAS TOUR ขึ้นแท่นคอนเสิร์ตเวิลด์ทัวร์ใหญ่ที่สุดในโลก
+            <br>และภาพยนตร์คอนเสิร์ต THE ERAS TOUR ที่ทำรายได้ทั่วโลกมากกว่า 
+          </p>
+          <p class="text-lg font-semibold text-gray-100">200,000,000 USD</p>
+
+          <!-- Contact -->
+          <p class="text-lg font-bold">ช่องทางการติดต่อ</p>
+          <div class="mt-2 flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
+            <a href="https://www.taylorswift.com/" 
+              target="_blank" class="text-teal-400 hover:text-teal-600">Taylor Swiftlink</a>
+            <a href="https://www.facebook.com/TaylorSwift" 
+              target="_blank" class="text-teal-400 hover:text-teal-600">Facebook</a>
+            <a href="https://www.instagram.com/taylorswift" 
+              target="_blank" class="text-teal-400 hover:text-teal-600">Instagram</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  
+</body>
+</html>
