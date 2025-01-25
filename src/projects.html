@@ -12,7 +12,7 @@
     <div id="projects"></div>
     <div id="footer"></div>
     <script>
-      // ฟังก์ชนสั ําหรับโหลด component
+      // ฟังก์ชันสำหรับโหลด component
       async function loadComponent(url, targetId) {
         try {
           const response = await fetch(url);
@@ -24,9 +24,9 @@
       }
       // โหลดทุก components
       document.addEventListener("DOMContentLoaded", () => {
-        loadComponent("/components/navbar/index.html", "navbar");
-        loadComponent("/components/projects/index.html", "projects");
-        loadComponent("/components/footer/index.html", "footer");
+        loadComponent("./components/navbar/index.html", "navbar");
+        loadComponent("./components/projects/index.html", "projects");
+        loadComponent("./components/footer/index.html", "footer");
       });
     </script>
   </body>
